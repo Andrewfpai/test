@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.background {
+  background-image: url('http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/10/1/1412172652515/Swiss-Federal-Institute-O-011.jpg');
+  background-size: cover; /* You can change this value as needed */
+  padding-bottom: 50px;
+  position: relative; /* Make sure to set a relative position */
+  z-index: 1;
+}
+
+.background::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value (0.5 for semi-transparent black) */
+  z-index: -1; /* Place it above the background image */
+  pointer-events: none; /* Allows clicks to pass through to the underlying content */
+}
+
+
+.navbar{
+  padding-top: 20px;
+  margin-left: 30px;
+  font-weight: 500;
+  color: #FFFFDD;
+}
+
+.title{
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.navbar-nav li {
+    padding-right: 20px; 
+    cursor: pointer;
+    
+}
+
+.nav-link{
+  color: #FFFFDD;
+}
+
+.titleColumn{
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.heading{
+  font-size: 5rem;
+  color: #FFFFDD;
+}
+
+.subheading{
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 70px;
+  color: #FFFFDD;
+  background-color: #8B7E74;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+
+.sejarah{
+  padding: 80px;
+  text-align: center;
+  padding-bottom: 80px;
+  background-color: white
+
+  
+}
+
+.heading-sejarah{
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.subheading-sejarah{
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+
+
+}
+
+.prestasi{
+
+  margin: 0;
+  margin-top: 80px;
+  padding-bottom: 100px;
+  padding-top: 70px;
+  text-align: center;
+  background-color: #FFFFDD;
+
+}
+.jurusan{
+  margin: 0;
+
+  padding-bottom: 100px;
+  padding-top: 70px;
+  text-align: center;
+  background-color: white
+
+  
+
+}
+.tentang{
+  padding: 30px 80px;
+
+  text-align: left;
+  padding-bottom: 40px;
+  background-color: #FFFFDD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.heading-prestasi, .heading-jurusan, .heading-tentang{
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.card-container{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+.card{
+  padding-top: 20px;
+}
+
+ion-icon {
+  font-size: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card-title{
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card-text{
+  font-size: 16px;
+  margin-top: 14px;
+ 
+}
+
+.list-jurusan{
+  text-align:  left;
+}
+
+.visi{
+  font-size: 2rem;
+
+}
+
+.subheading-tentang{
+  display: flex;
+  flex-direction: row;
+  gap:56px;
+}
